@@ -7,16 +7,19 @@
   text-decoration: none;
   list-style: none;
   font-family: 'Protest Riot', sans-serif;
-  cursor: pointer;
   max-width: 100%;
   max-height: 100%;
 }
 body {
   height: 100%;
 }
+img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 header {
   height: 10svh;
   display: flex;
+  padding-left: 20px;
   align-items: center;
   justify-content: space-between;
   color: chartreuse;
@@ -26,6 +29,7 @@ header ul {
   min-width: 10%;
   display: flex;
   justify-content: end;
+  padding-right: 20px;
   gap: 20px;
   padding-right: 10px;
   color: darkviolet;
@@ -38,11 +42,13 @@ button {
   text-align: center;
   border-radius: 5px solid black;
   color: white;
+  cursor: pointer;
   background-color: coral;
 }
 main {
   width: 100%;
   height: 60%;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -50,68 +56,84 @@ main {
   text-align: center;
   border: 2px solid black;
 }
-aside {
-  width: 100%;
-  height: 100%;
+componentes {
+  width: 50%;
+  height: 50%;
   display: flex;
-  flex-direction: column;
+  padding-top: 10px;
   justify-content: center;
   align-self: center;
   border: 2px solid black;
 }
-.enlaces1 {
-  display: flex;
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-}
-div > img {
-  max-width: 50%;
-  height: 50px;
-}
-.logo {
-  width: 100%;
+.Rosas {
   height: 100%;
-  font-size: smaller;
-  font-style: oblique;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.logo2 > h2 {
+  padding-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.logo antiguo {
+  max-width: 30%;
+  margin: auto;
+}
+.logo actual {
+  max-width: 30%;
+  margin: auto;
+  align-self: flex-end;
+}
+.Rosas > h2 {
+  margin: auto;
   color: chartreuse;
 }
-.pistolas {
-  max-width: 100%;
-  height: 100%;
-  display: flex;
-  gap: 20px;
-  text-align: center;
-  justify-content: space-around;
-  border: 2px solid black;
-}
+
 h2:hover {
   color: crimson;
 }
+.popurri {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+#roses {
+  padding-top: 40px;
+  padding-left: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  text-align: center;
+}
+.Dibujos * {
+  justify-content: space-between;
+}
+.vinilo {
+  padding-right: 20px;
+}
+
 footer ul {
   width: 100%;
   height: 120px;
   display: flex;
-  justify-content: flex-end;
+  padding-right: 20px;
+  justify-content: end;
+  align-content: center;
   align-items: center;
-  cursor: alias;
   border: 2px solid black;
   gap: 15px;
 }
-.redes > ul > li > img {
+footer > ul > li > img {
   width: 20px;
   height: 20px;
   display: flex;
 }
-@media (max-width: 540px) {
+@media (max-width: 590px) {
+  body {
+    width: 100%;
+  }
   header a {
     display: none;
   }
@@ -124,7 +146,15 @@ footer ul {
     flex-wrap: wrap;
     text-align: center;
   }
-  .pistolas {
+  .Rosas {
+    flex-wrap: wrap;
+  }
+  .popurri {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  #roses {
     flex-wrap: wrap;
   }
 }
